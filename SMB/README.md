@@ -157,15 +157,18 @@ route inside 192.168.1.0 255.255.255.0 129.12.108.2 1
 
 > Based on Philippine market prices (2025–2026). pfSense is free/open-source.
 
-| Component | Qty | Unit Price | Total |
-|---|---|---|---|
-| pfSense Mini PC (Fanless, 4-LAN) | 2 | ₱8,000 | ₱16,000 |
-| TP-Link TL-SG3428 (Core L3 Switch) | 2 | ₱12,990 | ₱25,980 |
-| Ubiquiti U6 Pro (Enterprise AP) | 2 | ₱14,000 | ₱28,000 |
-| CAT6 Cables & misc | — | ₱2,000 | ₱2,000 |
-| **TOTAL** | | | **~₱71,980** |
+| Component | Specs | Qty | Unit Price | Total |
+|---|---|---|---|---|
+| **Beelink Mini S12** (pfSense host) | Intel N95, 8GB RAM, 256GB SSD | 2 | ₱10,995 | ₱21,990 |
+| **Cisco Catalyst 3560** (refurbished) | 24-port, Layer 3, Cisco IOS | 2 | ~₱4,000 | ₱8,000 |
+| **Ubiquiti U6 Pro** (Enterprise AP) | WiFi 6, 300+ clients | 2 | ~₱14,000 | ₱28,000 |
+| **CAT6 Cables & misc** | — | — | ₱2,000 | ₱2,000 |
+| **pfSense OS** | Open-source | 2 | ₱0 | ₱0 |
+| **TOTAL** | | | | **~₱59,990** |
 
-> 💡 Compared to a full Cisco stack (~₱300,000+), this topology delivers equivalent redundancy at ~**1/4 the cost**.
+> 💡 Compared to a full Cisco stack (~₱300,000+), this topology delivers equivalent redundancy at ~**1/5 the cost**.
+> 
+> ⚠️ **Note:** Refurbished Cisco Catalyst 3560 switches are used to ensure full Cisco IOS CLI compatibility with the configurations in this repository.
 
 ---
 
@@ -186,9 +189,9 @@ route inside 192.168.1.0 255.255.255.0 129.12.108.2 1
 ## 🛠️ Tools Used
 
 - **Cisco Packet Tracer** — Network simulation
-- **pfSense / Cisco ASA** — Firewall
-- **Cisco 3560 series Switch** — Layer 3 core switching
-- **Access Point PT-N** — Enterprise wireless
+- **pfSense / Cisco ASA** — Firewall (pfSense on Beelink Mini S12 for production)
+- **Cisco Catalyst 3560** (refurbished) — Layer 3 core switching
+- **Ubiquiti U6 Pro** — Enterprise wireless
 
 ---
 
@@ -218,3 +221,4 @@ MIT License — feel free to use, modify, and share!
 ---
 
 > *Built with 💪 and a lot of brain clouds. 🐟*
+
