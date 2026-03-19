@@ -151,6 +151,8 @@ route outside 0.0.0.0 0.0.0.0 10.254.223.1 1
 route inside 192.168.1.0 255.255.255.0 129.12.108.2 1
 ```
 
+> ⚠️ **Firewall Disclaimer:** The firewall configurations in this repository were created and tested using an **emulated Cisco ASA in Cisco Packet Tracer**. Actual firewall commands and configurations may differ depending on the firewall platform, vendor, firmware version, and deployment environment. If you are deploying this topology in a production environment using pfSense, Fortinet, Palo Alto, or any other firewall solution, **please consult your firewall's official documentation** before applying any configurations. The author assumes no responsibility for misconfigurations in production environments.
+
 ---
 
 ## 💰 Estimated Cost (Philippine Peso)
@@ -169,6 +171,13 @@ route inside 192.168.1.0 255.255.255.0 129.12.108.2 1
 > 💡 Compared to a full Cisco stack (~₱300,000+), this topology delivers equivalent redundancy at ~**1/5 the cost**.
 > 
 > ⚠️ **Note:** Refurbished Cisco Catalyst 3560 switches are used to ensure full Cisco IOS CLI compatibility with the configurations in this repository.
+
+> 🔒 **Security Disclaimer:** The Cisco Catalyst 3560 is End-of-Life (EOL) and no longer receives security patches from Cisco. However, in this topology, the switches sit **behind dual pfSense firewalls** and are never directly exposed to the internet. The security risk is significantly mitigated provided that:
+> - pfSense firewalls are **kept up-to-date** with the latest security patches and firmware
+> - Firewall rules are **properly configured and regularly reviewed**
+> - Network access to the switches is **restricted to authorized administrators only**
+>
+> This topology is **not recommended for high-security environments** (e.g., finance, healthcare, government). For such deployments, replace the Catalyst 3560 with an actively supported switch such as the **Cisco Catalyst 9200** or equivalent.
 
 ---
 
@@ -221,4 +230,3 @@ MIT License — feel free to use, modify, and share!
 ---
 
 > *Built with 💪 and a lot of brain clouds. 🐟*
-
