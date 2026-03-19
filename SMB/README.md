@@ -187,8 +187,8 @@ route inside 192.168.1.0 255.255.255.0 129.12.108.2 1
 
 - **Cisco Packet Tracer** — Network simulation
 - **pfSense / Cisco ASA** — Firewall
-- **TP-Link TL-SG3428** — Layer 3 core switching
-- **Ubiquiti U6 Pro** — Enterprise wireless
+- **Cisco 3560 series Switch** — Layer 3 core switching
+- **Access Point PT-N** — Enterprise wireless
 
 ---
 
