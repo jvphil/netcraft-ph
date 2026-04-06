@@ -85,7 +85,7 @@ except Exception as e:
 🧪 5. Troubleshooting Checklist
 [ ] ARP Check: ip neighbor show should show 192.168.42.1 as REACHABLE.
 
-[ ] Port Check: nc -zv 192.168.100.1 22 from Ubuntu should succeed.
+[ ] Port Check: nc -zv 192.168.100.11 22 from Ubuntu should succeed.
 
 [ ] Route Check: ip route should have exactly ONE default via 192.168.42.1.
 
