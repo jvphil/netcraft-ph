@@ -91,6 +91,11 @@ except Exception as e:
 
 Note: If GitHub still renders the YAML block incorrectly, ensure there is exactly one blank line before and after the triple backticks (```).
 
+Specifications of Ubuntu VM
+Ubuntu Server 24.04 image (https://www.osboxes.org/ubuntu-server/#ubuntu-server-24-04-vmware)
+vCPU: 1
+RAM: 512MB
+Interfaces: 2
 
 ---
 
