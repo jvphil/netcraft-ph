@@ -1,0 +1,25 @@
+! --- System Basics ---
+hostname Core-Spine-02
+ip domain-name lab.local
+service password-encryption
+
+! --- Management Handshake ---
+interface FastEthernet0/0
+ description OOB_MANAGEMENT_CONTROLLER
+ ip address 192.168.100.12 255.255.255.0
+ no shutdown
+exit
+
+! --- Security & SSH ---
+username admin privilege 15 secret cisco123
+crypto key generate rsa general-keys modulus 2048
+ip ssh version 2
+ip ssh time-out 60
+
+line vty 0 4
+ login local
+ transport input ssh
+exit
+
+! --- Layer 3 Foundation ---
+ip routing
